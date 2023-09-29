@@ -114,6 +114,7 @@ public class ComputerStore {
 									+ (maxComputers - createdComputers) + " computers.");
 							}
 						}
+							//test
 					} while ((maxComputers - createdComputers) < addComputersize);
 					System.out.println();
 					break;
@@ -316,7 +317,7 @@ public class ComputerStore {
 		int createdComputers = Computer.findNumberOfCreatedComputers();
 		int count = 0;
 		for (int i = 0; i < createdComputers; i++) {
-			if (inventory[i].getBrand().equals(brandName)) {
+			if (inventory[i].getBrand().equalsIgnoreCase(brandName)) {
 				System.out.println("Computer: " + (i + 1));
 				inventory[i].displayComputer(inventory[i]);
 				count++;
