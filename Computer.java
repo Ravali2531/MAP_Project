@@ -48,7 +48,6 @@ public class Computer {
 		price = pr;
 	}
 	public static void displayComputer(Computer c) {
-		System.out.println("Computer info:");
 		System.out.println("Computer's brand is: "+c.getBrand());
 		System.out.println("Computer's model is: "+c.getModel());
 		System.out.println("Computer's serial Number is: "+c.getSerialNumber());
