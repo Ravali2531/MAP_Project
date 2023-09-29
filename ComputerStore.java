@@ -97,7 +97,7 @@ public class ComputerStore {
 				}
 				System.out.println("The details of the computer with the specified index are:");
 				inventory[index-1].displayComputer(inventory[index-1]);
-				
+				//test
 				boolean check3 = true;
 				int choice2;
 				do {
