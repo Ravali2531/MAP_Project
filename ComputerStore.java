@@ -114,34 +114,10 @@ public class ComputerStore {
 									+ (maxComputers - createdComputers) + " computers.");
 							}
 						}
+							//test
 					} while ((maxComputers - createdComputers) < addComputersize);
 					System.out.println();
 					break;
-
-				char check2 = 'Y';
-				do {
-					System.out.print("Please enter the number of computer you want to modify: ");
-					index = sc.nextInt();
-					if (index-1 >= createdComputers) {
-						System.out.println(
-								"There is no computer in this location, please enter Y if you wish to enter another computer number, enter Q if you want to quit.");
-						check2 = sc.next().charAt(0);
-					} else {
-						check2 = 'N';
-					}
-				} while (check2 == 'Y');
-				if(check2 == 'Q') {
-					System.out.println("You have exited from option 2\n");
-					break;
-				}
-				System.out.println("The details of the computer with the specified index are:");
-				inventory[index-1].displayComputer(inventory[index-1]);
-				//test
-				boolean check3 = true;
-				int choice2;
-				do {
-=======
->>>>>>> Sept_24
 
 				case 2:
 					System.out.println("Please enter your password");
