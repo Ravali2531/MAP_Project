@@ -9,6 +9,7 @@ public class Computer {
 	private static long SNCounter = 100000;
 	public static int computerCounter = 0;
 	
+	//Default constructor
 	public Computer() {
 		brand = "Apple";
 		model = "MAC 2023";
@@ -16,6 +17,7 @@ public class Computer {
 		price = 10000;
 		computerCounter++;
 	}
+	//Parameterized constructor
 	public Computer(String br, String mod, double pr) {
 		serialNumber = SNCounter++;
 		brand = br;
@@ -23,6 +25,8 @@ public class Computer {
 		price = pr;
 		computerCounter++;
 	}
+	
+	//getter and setter functions 
 	public String getBrand() {
 		return brand;
 	}
@@ -47,6 +51,7 @@ public class Computer {
 	public void setPrice(double pr) {
 		price = pr;
 	}
+	//displayComputer function is used to display specified computer
 	public static void displayComputer(Computer c) {
 		System.out.println("Computer's brand is: "+c.getBrand());
 		System.out.println("Computer's model is: "+c.getModel());
@@ -58,9 +63,11 @@ public class Computer {
 		return "Computer [brand=" + brand + ", model=" + model + ", serialNumber=" + serialNumber + ", price=" + price
 				+ "]";
 	}
+	//returns number of created computers
 	public static int findNumberOfCreatedComputers() {
 		return computerCounter;
 	}
+	//returns true if 2 computers are same
 	public boolean equals(Computer c) {
 		if(brand == c.getBrand() && model == c.getModel() && price==c.getPrice()) {
 			return true;
